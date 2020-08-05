@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="mt-5 p-5">
+    <mdb-container fluid grid-list-xl>
+      <mdb-row>
+        <mdb-col col="9">
+          <h1>Home</h1>
+        </mdb-col>
+        <mdb-col col="3"></mdb-col>
+      </mdb-row>
+    </mdb-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { mdbContainer, mdbRow, mdbCol } from "mdbvue";
 
 export default {
-  name: 'Home',
+  name: "home",
   components: {
-    HelloWorld
-  }
-}
+    mdbContainer,
+    mdbRow,
+    mdbCol,
+  },
+};
 </script>
